@@ -52,11 +52,7 @@ Simply go to [hnsdomains.one](https://hnsdomains.one) and click on "My Account".
 
 ### Can I trade ENS domains on NFT exchanges?
 
-Yes, .eth names are tradeable as NFTs.
-
-### How can I transfer domains registered in the .eth registry to someone else?
-
-You can do this using [our Manager interface here](https://app.ens.domains), or using any tool with NFT support.
+Yes, .one names are tradeable as NFTs.
 
 ### What prohibits large scale domain grabbing besides registration fees?
 
