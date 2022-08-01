@@ -32,7 +32,7 @@ const tokenId = '792336638293796348375898654485693427847124828194845492895609813
 // Should return 0xaf2caa1c2ca1d027f1ac823b529d0a67cd144264b2789fa2ea4d63a67c7103cc
 const labelHash = BigNumber.from(tokenId).toHexString()
 
-const url = 'https://api.thegraph.com/subgraphs/name/ensdomains/ens'
+const url = 'https://api.thegraph.com/subgraphs/name/khelaia/one'
 const GET_LABEL_NAME = gql`
 query{
   domains(first:1, where:{labelhash:"${labelHash}"}){
