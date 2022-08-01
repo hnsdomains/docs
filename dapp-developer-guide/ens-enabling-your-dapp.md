@@ -1,10 +1,10 @@
-# ENS Enabling your DApp
+# HNS Enabling your DApp
 
-ENS integration in an application encompasses several critical features, each of which can be implemented independently. While comprehensive ENS integration is ideal, even basic support can be a huge benefit to users. Below, we outline three levels of ENS integration. Level 1 is easily achieved and provides high impact for users, while levels 2 and 3 provide more functionality to your users, improving your dApp's usability and your users' experience interacting with your DApp.
+HNS integration in an application encompasses several critical features, each of which can be implemented independently. While comprehensive HNS integration is ideal, even basic support can be a huge benefit to users. Below, we outline three levels of HNS integration. Level 1 is easily achieved and provides high impact for users, while levels 2 and 3 provide more functionality to your users, improving your dApp's usability and your users' experience interacting with your DApp.
 
-## 1. Resolving ENS names
+## 1. Resolving HNS names
 
-The first step to supporting ENS in your application is making your application understand ENS names, and accepting them anywhere an address is accepted. To understand how to do this, see [Resolving Names](resolving-names.md).
+The first step to supporting HNS in your application is making your application understand HNS names, and accepting them anywhere an address is accepted. To understand how to do this, see [Resolving Names](resolving-names.md).
 
 If possible, when a user enters an ENS name instead of an address, remember the ENS name, not the address it currently resolves to. This makes it possible for users to update their ENS names and have applications they used the name in automatically resolve to the new address, in the same way that you would expect your browser to automatically direct you to the new IP address if a site you use changes servers.
 

@@ -1,10 +1,10 @@
-# ENS Libraries
+# HNS Libraries
 
-ENS support is available in many popular languages. If you know of a library that is not listed here, please [send us a PR](https://github.com/ensdomains/ens/compare).
+HNS support is available in many popular languages. If you know of a library that is not listed here, please [send us a PR](https://github.com/ensdomains/ens/compare).
 
 ### Javascript
 
-* [ensjs](https://www.npmjs.com/package/@ensdomains/ensjs), maintained by the ENS developers
+* [ensjs](https://www.npmjs.com/package/@ensdomains/ensjs), maintained by the HNS developers
 * [ethereum-ens](https://www.npmjs.com/package/ethereum-ens) \(deprecated\)
 * [react-ens-address](https://github.com/ensdomains/react-ens-address)
 * [ethers.js](https://github.com/ethers-io/ethers.js)
@@ -14,17 +14,17 @@ ENS support is available in many popular languages. If you know of a library tha
 
 #### Which Javascript library should I use?
 
-If you are already using web3.js or ethers.js, and do not require functionality such as creating subdomains, transferring ownership, or updating resolvers, use built in ENS features of these libraries.
+If you are already using web3.js or ethers.js, and do not require functionality such as creating subdomains, transferring ownership, or updating resolvers, use built in HNS features of these libraries.
 
-If you are using React and only need to do forward and reverse resolution of ENS names with built in UI, use react-ens-address.
+If you are using React and only need to do forward and reverse resolution of HNS names with built in UI, use react-ens-address.
 
-If you want to have ENS instance deployed into your dev environment, you may want to use embark.io or waffle.io which allows you to configure/deploy ENS registry in your Ethereum test instance.
+If you want to have HNS instance deployed into your dev environment, you may want to use embark.io or waffle.io which allows you to configure/deploy HNS registry in your Ethereum test instance.
 
 Otherwise, use ensjs.
 
 #### Accessing smart contracts directly
 
-All the ENS smart contracts are published as `@ensdomains/ens-contracts` [npm module.](https://github.com/ensdomains/ens-contracts)
+All the HNS smart contracts are published as `@ensdomains/ens-contracts` [npm module.](https://github.com/ensdomains/ens-contracts)
 
 This is how you include abi into your frontend code.
 

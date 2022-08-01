@@ -1,6 +1,6 @@
 # Registrar Frequently Asked Questions
 
-## About the ENS Registrar
+## About the HNS Registrar
 
 ### How many transactions are required to register a  name?
 
@@ -10,13 +10,13 @@ The registrar uses two transactions (commit and reveal) to register a name.
 
 It takes less than 5 minutes to register a name, including a 1-minute delay between the first and second transactions to prevent frontrunning.
 
-### Do we need to do anything to ensure the continued use of existing ENS names?
+### Do we need to do anything to ensure the continued use of existing HNS names?
 
-Make sure you renew your ENS names before they expire! You add registration years to any name at any time, and for any duration you'd like.
+Make sure you renew your HNS names before they expire! You add registration years to any name at any time, and for any duration you'd like.
 
-### What happens if I have several ENS names with different renewal dates?
+### What happens if I have several HNS names with different renewal dates?
 
-You can add registration years to many names at a time on your My Account page in the ENS Manager App.
+You can add registration years to many names at a time on your My Account page in the HNS Manager App.
 
 ### How do renewals work?
 
@@ -38,9 +38,9 @@ Yearly renewals cost $5/year for names that are 5 characters or longer. 4 charac
 
 Rather than being locked and held, as in the original interim registrar, renewal fees in the permanent registrar are spent. You will not get them back.
 
-### How will ENS team manage and spend the funds? Will there be a foundation or transparent oversight?
+### How will HNS team manage and spend the funds? Will there be a foundation or transparent oversight?
 
-Funds are sent to the ENS root multisig, for the keyholders to determine how funds get allocated. We're considering multiple options for the long-term use of the funds, such as funding the core ENS team, as well as other teams building on ENS. There are also tax considerations to address.
+Funds are sent to the HNS root multisig, for the keyholders to determine how funds get allocated. We're considering multiple options for the long-term use of the funds, such as funding the core ENS team, as well as other teams building on ENS. There are also tax considerations to address.
 
 ### How are funds from .eth registration income used?
 

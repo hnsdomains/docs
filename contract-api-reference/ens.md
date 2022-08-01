@@ -1,14 +1,14 @@
 ---
-description: The ENS registry.
+description: The HNS registry.
 ---
 
 # Registry
 
 [Source](https://github.com/ensdomains/ens/blob/master/contracts/ENS.sol)
 
-The ENS registry is the core contract that lies at the heart of ENS resolution. All ENS lookups start by querying the registry. The registry maintains a list of domains, recording the owner, resolver, and TTL for each, and allows the owner of a domain to make changes to that data.
+The HNS registry is the core contract that lies at the heart of HNS resolution. All HNS lookups start by querying the registry. The registry maintains a list of domains, recording the owner, resolver, and TTL for each, and allows the owner of a domain to make changes to that data.
 
-The ENS registry is specified in [EIP 137](https://eips.ethereum.org/EIPS/eip-137).
+The HNS registry is specified in [EIP 137](https://eips.ethereum.org/EIPS/eip-137).
 
 ## Get Owner
 

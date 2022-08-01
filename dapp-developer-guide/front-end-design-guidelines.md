@@ -1,16 +1,16 @@
 ---
 description: >-
-  ENS is a tool to simplify the experience for your users. Here are a series of
+  HNS is a tool to simplify the experience for your users. Here are a series of
   guidelines and tools that will help you make design choices and implement the
-  best ENS user experience.
+  best HNS user experience.
 ---
 
-# ENS Front-End Design Guidelines
+# HNS Front-End Design Guidelines
 
-### When to show ENS names
+### When to show HNS names
 
-In every instance a user might otherwise see an Ethereum address or content hash, you can instead display an ENS name.  
-There are two primary use cases for allowing users to display ENS names in your dapp:
+In every instance a user might otherwise see an Ethereum address or content hash, you can instead display an HNS name.  
+There are two primary use cases for allowing users to display HNS names in your dapp:
 
 1. **Replacing Ethereum addresses with ENS names**: When users are exploring the front-end of your dapp, wherever you would display an Ethereum address, you can instead display an ENS name. 
 2. **Resolving input fields**: You can allow the user to write an ENS name in an input field that expects an Ethereum address, rather than entering the Ethereum address.

@@ -2,13 +2,13 @@
 
 ## Introduction
 
-DNSSEC (The Domain Name System Security Extensions) establishes a chain of trust from the root key which is signed by ICANN (.) and down through each key. Given DNSSEC is enabled and an ETH address is put into the subdomain of the domain you own (eg: `_ens.yourdomain.tld`), ENS manager allows anyone to submit the hash of the chain to `DNSSEC Oracle` smart contract
+DNSSEC (The Domain Name System Security Extensions) establishes a chain of trust from the root key which is signed by ICANN (.) and down through each key. Given DNSSEC is enabled and an ETH address is put into the subdomain of the domain you own (eg: `_ens.yourdomain.tld`), HNS manager allows anyone to submit the hash of the chain to `DNSSEC Oracle` smart contract
 
 ## Steps
 
 ### Step 1 Setting up DNSSEC signing
 
-When you first land on ENS manager, you will see something like below.
+When you first land on HNS manager, you will see something like below.
 
 ![step1: dnnsec not enabled](<.gitbook/assets/dnssec\_step1 (1).png>)
 
@@ -22,7 +22,7 @@ Whatever provider you need, make sure you select RSA signatures and SHA256 hashi
 
 ### Step 2: Adding a TXT record
 
-The DNS Registrar on ENS looks for a TXT record with a specific name and format in order to verify what Ethereum address should be given ownership of the domain. To claim ownership of mydomain.xyz, create a TXT record in your DNS zone, \_ens.mydomain.xyz, with text data of the form a=0x1234..., where 0x1234... is the Ethereum address you want to give control of the ENS record to.
+The DNS Registrar on HNS looks for a TXT record with a specific name and format in order to verify what Ethereum address should be given ownership of the domain. To claim ownership of mydomain.xyz, create a TXT record in your DNS zone, \_ens.mydomain.xyz, with text data of the form a=0x1234..., where 0x1234... is the Ethereum address you want to give control of the HNS record to.
 
 ![step2: add text](<.gitbook/assets/dnssec\_step2 (1).png>)
 

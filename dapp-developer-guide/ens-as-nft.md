@@ -1,10 +1,10 @@
-# ENS as NFT
+# HNS as NFT
 
-When ENS  registrar migrated in May 2019, the  registrar became an [ERC721](https://github.com/ensdomains/ens/blob/master/docs/ethregistrar.rst#id3) compliant non-fungible token contract, meaning that  registrations can be transferred in the same fashion as other NFTs.
+When HNS  registrar migrated in May 2019, the  registrar became an [ERC721](https://github.com/ensdomains/ens/blob/master/docs/ethregistrar.rst#id3) compliant non-fungible token contract, meaning that  registrations can be transferred in the same fashion as other NFTs.
 
-## Deriving tokenId from ENS name
+## Deriving tokenId from HNS name
 
-The tokenId of ENS name is simply the uint256 representation of the hash of the label (`vitalik` for `vitalik`).
+The tokenId of HNS name is simply the uint256 representation of the hash of the label (`vitalik` for `vitalik`).
 
 ```javascript
 const ethers = require('ethers')
@@ -17,9 +17,9 @@ const tokenId = BigNumber.from(labelHash).toString()
 
 In the example above,[`79233663829379634837589865448569342784712482819484549289560981379859480642508`](https://opensea.io/assets/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85/79233663829379634837589865448569342784712482819484549289560981379859480642508) is the tokenId of `vitalik`
 
-## Deriving ENS name from tokenId
+## Deriving HNS name from tokenId
 
-Unlike deriving tokenId, deriving ENS name from tokenId is not as easy. This is because all ENS names are stored as fixed-length hash to allow registering infinite length of names. The downside of this architecture is that you cannot directly query ENS smart contracts to return ENS name using tokenId.
+Unlike deriving tokenId, deriving HNS name from tokenId is not as easy. This is because all HNS names are stored as fixed-length hash to allow registering infinite length of names. The downside of this architecture is that you cannot directly query ENS smart contracts to return ENS name using tokenId.
 
 Our recommended way is to query via [https://thegraph.com](https://thegraph.com) ENS subgraph. The graph decodes the hash to name as it indexes. The example code to query is as follows.
 

@@ -3,7 +3,7 @@
 * _Controller_: The account that may edit the records of a name. The Controller may be changed by the Registrant or Controller.
 * _Label_: An individual component of a name, such as 'alice'.
 * _Labelhash_: The keccak256 hash of an individual label.
-* _Name_: An ENS identifier such as 'alice'. Names may consist of multiple parts, called labels, separated by dots.
+* _Name_: An HNS identifier such as 'alice'. Names may consist of multiple parts, called labels, separated by dots.
 * _Namehash_: The algorithm used to process an ENS name and return a cryptographic hash uniquely identifying that name. Namehash takes a name as input and produces a _node_.
 * _Node_: A cryptographic hash uniquely identifying a name.
 * _Owner_: The owner of a name is the entity referenced in the ENS registry's owner field. An owner may transfer ownership, set a resolver or TTL, and create or reassign subdomains.

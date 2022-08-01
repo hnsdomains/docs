@@ -2,7 +2,7 @@
 
 ## Transferring a Name
 
-Each name in ENS has an owner. This account or contract is the only one that may make changes to the name in the ENS registry. The owner of a name can transfer ownership to any other account.
+Each name in HNS has an owner. This account or contract is the only one that may make changes to the name in the ENS registry. The owner of a name can transfer ownership to any other account.
 
 {% tabs %}
 {% tab title="ensjs" %}

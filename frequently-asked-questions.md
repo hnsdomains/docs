@@ -1,6 +1,6 @@
 # Frequently Asked Questions
 
-## About the ENS Registry
+## About the HNS Registry
 
 ### Why are names registered as hashes?
 
@@ -16,11 +16,11 @@ Yes. You can create whatever subdomains you wish and assign ownership of them to
 Yes, you can update the addresses and other resources pointed to by your name at any time.
 
 
-### Who owns the ENS rootnode? What powers does that grant them?
+### Who owns the HNS rootnode? What powers does that grant them?
 
 The root node is presently owned by a multisig contract, with keys held by [trustworthy individuals in the Harmony community]. We expect that this will be hands-off, with the root ownership only used to effect administrative changes, such as the introduction of a new TLD, or to recover from an emergency such as a critical vulnerability in a TLD registrar.
 
-The keyholders are drawn from respected members of the community, and with the exception of Nick Johnson, founder of ENS, are unaffiliated with ENS. We ask and expect them to exercise their individual judgement acting in the interests of the ENS community, rather than rubber-stamping requests made to them by ENS developers.
+The keyholders are drawn from respected members of the community, and with the exception of Nick Johnson, founder of HNS, are unaffiliated with HNS. We ask and expect them to exercise their individual judgement acting in the interests of the ENS community, rather than rubber-stamping requests made to them by ENS developers.
 
 Since the owner of a node can change ownership of a subnode (unless they have otherwise locked it from their control), the owner of the root can change any node in the ENS tree. This means that the keyholders can replace the contracts that govern issuing and managing domains, giving them ultimate control over the structure of the ENS system and the names registered in it. However, the root key holders have locked control of the .one registrar contract, which means that even keyholders cannot affect the ownership of .one domains.
 

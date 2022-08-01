@@ -1,10 +1,10 @@
-# ENS Contracts Overview
+# HNS Contracts Overview
 
-ENS is a system comprised by multiple contracts. This modularity allows functionality to be built (and sometimes removed) over time. While it all rests on the simple, yet unchangeable, ENS registry, other modules have been slowly added, upgraded and shuffled to reflect the evolving ecosystem in which ENS finds itself in.
+HNS is a system comprised by multiple contracts. This modularity allows functionality to be built (and sometimes removed) over time. While it all rests on the simple, yet unchangeable, HNS registry, other modules have been slowly added, upgraded and shuffled to reflect the evolving ecosystem in which HNS finds itself in.
 
-![ENS Map](../.gitbook/assets/ENS_Map.png)
+![HNS Map](../.gitbook/assets/ENS_Map.png)
 
-The map is divided in two sections: the ENS protocol, and the ENS DAO.
+The map is divided in two sections: the HNS protocol, and the ENS DAO.
 
 ### ENS Protocol
 
