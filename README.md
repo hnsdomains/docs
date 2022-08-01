@@ -42,7 +42,7 @@ Each record type - cryptocurrency address, IPFS content hash, and so forth - def
 
 Resolving a name in ENS is a two-step process: First, ask the registry what resolver is responsible for the name, and second, ask that resolver for the answer to your query.
 
-![](https://lh5.googleusercontent.com/\_OPPzaxTxKggx9HuxloeWtK8ggEfIIBKRCEA6BKMwZdzAfUpIY6cz7NK5CFmiuw7TwknbhFNVRCJsswHLqkxUEJ5KdRzpeNbyg8\_H9d2RZdG28kgipT64JyPZUP--bAizozaDcxCq34)
+![](<.gitbook/assets/data_flow.png>)
 
 In the above example, we're trying to find the Ethereum address pointed to by 'foo.eth'. First, we ask the registry which resolver is responsible for 'foo.eth'. Then, we query that resolver for the address of 'foo.eth'.
 
