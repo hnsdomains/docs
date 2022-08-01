@@ -10,15 +10,15 @@ Top-level domains, like ‘.eth’ and ‘.test’, are owned by smart contracts
 
 Because of the hierarchal nature of HNS, anyone who owns a domain at any level may configure subdomains - for themselves or others - as desired. For instance, if Alice owns 'alice.eth', she can create 'pay.alice.one' and configure it as she wishes.
 
-HNS is deployed on the Ethereum main network and on several test networks. If you use a library such as the [HNSjs](https://www.npmjs.com/package/@HNSdomains/HNSjs) Javascript library, or an end-user application, it will automatically detect the network you are interacting with and use the HNS deployment on that network.
+HNS is deployed on the Ethereum main network and on several test networks. If you use a library such as the [HNSjs](https://www.npmjs.com/package/@ENSdomains/ENSjs) Javascript library, or an end-user application, it will automatically detect the network you are interacting with and use the HNS deployment on that network.
 
-You can try HNS out for yourself now by using the [HNS Manager App](https://app.HNS.domains), or by using any of the many HNS enabled applications on [our homepage](https://HNS.domains).
+You can try HNS out for yourself now by using the [HNS Manager App](https://hnsdomains.one), or by using any of the many HNS enabled applications on [our homepage](https://HNSdomains.one).
 
 ## HNS Architecture
 
-HNS has two principal components: the [registry](contract-api-reference/HNS.md), and [resolvers](contract-api-reference/publicresolver.md).
+HNS has two principal components: the [registry](contract-api-reference/ENS.md), and [resolvers](contract-api-reference/publicresolver.md).
 
-![](<.gitbook/assets/HNS-architecture (1).png>)
+![](<.gitbook/assets/ENS-architecture (1).png>)
 
 The HNS registry consists of a single smart contract that maintains a list of all domains and subdomains, and stores three critical pieces of information about each:
 
