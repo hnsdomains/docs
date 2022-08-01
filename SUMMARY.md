@@ -7,7 +7,6 @@
 * [Registrar Frequently Asked Questions](permanent-registrar-faq.md)
 * [Deploying ENS on a Private Chain](deploying-ens-on-a-private-chain.md)
 * [DNS Registrar guide](dns-registrar-guide.md)
-* [Bug Bounty Program](bug-bounty-program.md)
 
 ## Dapp Developer Guide
 
@@ -39,8 +38,3 @@
 * [Writing a Resolver](contract-developer-guide/writing-a-resolver.md)
 * [Writing a Registrar](contract-developer-guide/writing-a-registrar.md)
 * [HNS Support Chat](https://discord.gg/nX7ZdcSsNt)
-
-## ENS Migration (February 2020)
-
-* [Guide for DApp Developers](ens-migration-february-2020/guide-for-dapp-developers.md)
-* [Technical Description](ens-migration-february-2020/technical-description.md)
