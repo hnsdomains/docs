@@ -5,8 +5,6 @@
 * [Frequently Asked Questions](frequently-asked-questions.md)
 * [Deployed Contracts](ens-deployments.md)
 * [Registrar Frequently Asked Questions](permanent-registrar-faq.md)
-* [Deploying HNS on a Private Chain](deploying-ens-on-a-private-chain.md)
-* [DNS Registrar guide](dns-registrar-guide.md)
 
 ## Dapp Developer Guide
 
