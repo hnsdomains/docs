@@ -1,31 +1,11 @@
-# HNS Deployments
+# HNS Deployed Contracts
 
-If you are working with an [HNS library](dapp-developer-guide/ens-libraries.md), your library will automatically find the HNS deployment you need. If for whatever reason, you need to interact with HNS directly, details for the currently supported deployments are detailed here.
 
-The HNS registry is deployed at 0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e. This same address is used across Mainnet, Ropsten, Rinkeby and Goerli.
+On mainnet, the following contracts are deployed:
 
-On mainnet, the following registrars are deployed:
 
-* , using the  Permanent registrar.
-* .xyz, via DNS integration
-* .luxe, via a [custom integration](http://join.luxe/) that allows any owner of a .luxe DNS name to use HNS.
-* .kred, via a [custom integration](http://domains.kred/) that synchs and changes to a .kred HNS token to DNS automatically.
-* .art, via a custom integration
-
-To find out the contract address of each tld, check the "controller" address of the tld \(eg: [https://app.ens.domains/name/xyz](https://app.ens.domains/name/xyz) for `.xyz`
-
-![](.gitbook/assets/screenshot-2021-05-19-at-17.54.17.png)
-
-Ropsten test network has the .test registrar deployed. This registrar permits anyone to instantly register a domain for testing purposes; these domains persist for 28 days.
-
-In addition, the test networks also have a deployment of the  registrar for testing purposes.
-
-For other contract addresses such as root, multisig, controller, public resolver, and so on, you can see their address under [https://app.ens.domains/name/ens/subdomains](https://app.ens.domains/name/ens.eth/subdomains)
-
-Back in February 2020, the ENS registry was migrated to the new contract address to patch security vulnerabilities \(Read more detail [here](ens-migration-february-2020/technical-description.md)\). The prior registry addresses were:
-
-* Mainnet, at [0x314159265dd8dbb310642f98f50c066173c1259b](https://etherscan.io/address/0x314159265dd8dbb310642f98f50c066173c1259b#code).
-* Ropsten, at [0x112234455c3a32fd11230c42e7bccd4a84e02010](https://ropsten.etherscan.io/address/0x112234455c3a32fd11230c42e7bccd4a84e02010).
-* Rinkeby, at [0xe7410170f87102df0055eb195163a03b7f2bff4a](https://rinkeby.etherscan.io/address/0xe7410170f87102df0055eb195163a03b7f2bff4a).
-* Goerli, at [0x112234455c3a32fd11230c42e7bccd4a84e02010](https://goerli.etherscan.io/address/0x112234455c3a32fd11230c42e7bccd4a84e02010).
-
+* ENS, at [0x339803405DdBE2e25D25022E17B8E89aE645c01D](https://explorer.harmony.one/address/0x339803405ddbe2e25d25022e17b8e89ae645c01d).
+* Registrar, at [0x5895CB8D3B399Ffbe381d9ebA26DCaEBfD8B51B0](https://explorer.harmony.one/address/0x5895cb8d3b399ffbe381d9eba26dcaebfd8b51b0).
+* Controller, at [0x02aa750e4586BDF94DC536D0aB67607f5e232d64](https://explorer.harmony.one/address/0x02aa750e4586bdf94dc536d0ab67607f5e232d64).
+* Resolver, at [0x52707a66A52f9E3bEf26f6d76873ba06c38597d0](https://explorer.harmony.one/address/0x52707a66a52f9e3bef26f6d76873ba06c38597d0).
+* Reverse Registrar, at [0xf2C2993530EdC1cc83FB2208b93ED2C10aDEFbA9](https://explorer.harmony.one/address/0xf2c2993530edc1cc83fb2208b93ed2c10adefba9).
