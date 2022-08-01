@@ -26,7 +26,6 @@
 * [.one Permanent Registrar](contract-api-reference/.one-permanent-registrar/README.md)
   * [Registrar](contract-api-reference/.one-permanent-registrar/registrar.md)
   * [Controller](contract-api-reference/.one-permanent-registrar/controller.md)
-* [DNS Registrar](contract-api-reference/dns-registrar.md)
 
 ## Contract Developer Guide
 
