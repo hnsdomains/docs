@@ -2,15 +2,15 @@
 
 The Harmony Name Service (HNS) is a distributed, open, and extHNSible naming system based on the Harmony blockchain.
 
-HNS’s job is to map human-readable names like ‘alice.eth’ to machine-readable identifiers such as Ethereum addresses, other cryptocurrency addresses, content hashes, and metadata. HNS also supports ‘reverse resolution’, making it possible to associate metadata such as canonical names or interface descriptions with Ethereum addresses.
+HNS’s job is to map human-readable names like ‘alice.one’ to machine-readable identifiers such as Ethereum addresses, other cryptocurrency addresses, content hashes, and metadata. HNS also supports ‘reverse resolution’, making it possible to associate metadata such as canonical names or interface descriptions with Ethereum addresses.
 
-HNS has similar goals to DNS, the Internet’s Domain Name Service, but has significantly different architecture due to the capabilities and constraints provided by the Ethereum blockchain. Like DNS, HNS operates on a system of dot-separated hierarchical names called domains, with the owner of a domain having full control over subdomains.
+HNS has similar goals to DNS, the Internet’s Domain Name Service, but has significantly different architecture due to the capabilities and constraints provided by the Harmony blockchain. Like DNS, HNS operates on a system of dot-separated hierarchical names called domains, with the owner of a domain having full control over subdomains.
 
-Top-level domains, like ‘.eth’ and ‘.test’, are owned by smart contracts called registrars, which specify rules governing the allocation of their subdomains. Anyone may, by following the rules imposed by these registrar contracts, obtain ownership of a domain for their own use. HNS also supports importing in DNS names already owned by the user for use on HNS.
+Top-level domains, like ‘.one’ and ‘.test’, are owned by smart contracts called registrars, which specify rules governing the allocation of their subdomains. Anyone may, by following the rules imposed by these registrar contracts, obtain ownership of a domain for their own use. HNS also supports importing in DNS names already owned by the user for use on HNS.
 
 Because of the hierarchal nature of HNS, anyone who owns a domain at any level may configure subdomains - for themselves or others - as desired. For instance, if Alice owns 'alice.eth', she can create 'pay.alice.one' and configure it as she wishes.
 
-HNS is deployed on the Ethereum main network and on several test networks. If you use a library such as the [HNSjs](https://www.npmjs.com/package/@ENSdomains/ENSjs) Javascript library, or an end-user application, it will automatically detect the network you are interacting with and use the HNS deployment on that network.
+HNS is deployed on the Harmony main network and on several test networks. If you use a library such as the [HNSjs](https://www.npmjs.com/package/@ENSdomains/ENSjs) Javascript library, or an end-user application, it will automatically detect the network you are interacting with and use the HNS deployment on that network.
 
 You can try HNS out for yourself now by using the [HNS Manager App](https://hnsdomains.one), or by using any of the many HNS enabled applications on [our homepage](https://HNSdomains.one).
 
