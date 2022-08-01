@@ -6,6 +6,7 @@
 
 Hashes provide a fixed length identifier that can easily be passed around between contracts with fixed overhead and no issues passing around variable-length strings.
 
+
 ### Once I own a name, can I create my own subdomains?
 
 Yes. You can create whatever subdomains you wish and assign ownership of them to other people if you desire. You can even set up your own registrar for your domain.
@@ -56,15 +57,15 @@ The ENS Manager App and the Twitter bot have built-in lists of common names, dra
 
 Currently, registration costs are set at the following prices:
 
-* 5+ character .one names: $5 in ETH per year.
-* 4 character .one names: $160 in ETH per year.
-* 3 character .one names $640 in ETH per year.
+* 5+ character .one names: $5 in ONE per year.
+* 4 character .one names: $30 in ONE per year.
+* 3 character .one names $120 in ONE per year.
 
 3 and 4 character names have higher pricing to reflect the small number of these names available.
 
 ### What happens if I forget to extend the registration of a name?
 
-After your name expires, there is a 90 day grace period in which the owner can't edit the records but can still re-register the name. After the grace period, the name is released for registration by anyone with a temporary premium which decreases over a 28 days period. The released name continues to resolve your ETH address until the new owner overwrites it.
+After your name expires, there is a 90 day grace period in which the owner can't edit the records but can still re-register the name. After the grace period, the name is released for registration by anyone with a temporary premium which decreases over a 28 days period. The released name continues to resolve your 0x address until the new owner overwrites it.
 
 ### What kinds of behaviours are likely to result in losing ownership of a name?
 
