@@ -113,7 +113,7 @@ function valid(string name) public view returns(bool);
 function available(string name) public view returns(bool);
 ```
 
-`available` returns true iff the name is both valid and available for registration by this controller. [Under the hood](https://github.com/ensdomains/ethregistrar/blob/master/contracts/ETHRegistrarController.sol#L55-L58), this call uses the `valid` function \(above\) and the `available` function on the [registrar](registrar.md#check-name-availability) contract, which checks for availability in both the legacy ENS registrar and current ENS registrar.
+`available` returns true iff the name is both valid and available for registration by this controller. [Under the hood](https://github.com/ensdomains/ethregistrar/blob/master/contracts/ETHRegistrarController.sol#L55-L58), this call uses the `valid` function \(above\) and the `available` function on the [registrar](registrar.md#check-name-availability) contract, which checks for availability in both the legacy HNS registrar and current HNS registrar.
 
 Callers **should** use this function to check if a name is available for registration, rather than the `available` function on the registrar contract, which does not check name length.
 
@@ -156,7 +156,7 @@ Emits the following event on a successful call:
 event NameRegistered(string name, bytes32 indexed label, address indexed owner, uint cost, uint expires);
 ```
 
-A successful call also results in the Registrar emitting a [Name Registered Event](registrar.md#name-registered), and the ENS registry emitting a [New Owner Event](../ens.md#set-subdomain-owner).
+A successful call also results in the Registrar emitting a [Name Registered Event](registrar.md#name-registered), and the HNS registry emitting a [New Owner Event](../ens.md#set-subdomain-owner).
 
 ### Extend Name Registration
 

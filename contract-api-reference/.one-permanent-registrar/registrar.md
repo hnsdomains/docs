@@ -7,7 +7,7 @@ This contract implements the core functionality of the permanent registrar, with
 * The owner of the registrar may add and remove 'controllers'.
 * Controllers may register new domains and extend the expiry of (renew) existing domains. They can not change the ownership or reduce the expiration time of existing domains.
 * Name owners may transfer ownership to another address.
-* Name owners may reclaim ownership in the ENS registry if they have lost it.
+* Name owners may reclaim ownership in the HNS registry if they have lost it.
 * Owners of names in the legacy registrar may transfer them to the new registrar, during the 1 year transition period. When they do so, their deposit is returned to them in its entirety.
 
 This section documents the parts of the registrar interface relevant to implementers of tools that interact with it. Functionality exclusive to the registrar owner or to controllers is omitted for brevity.
@@ -18,13 +18,13 @@ Registrations and renewals are handled via the [controller](controller.md).
 
 ## Names and Registrations
 
-All names inside ENS have an owner. The owner of a name can transfer the name to a new owner, set a resolver, and create and reassign subdomains. This functionality is all contained in the [ENS registry](../ens.md).
+All names inside HNS have an owner. The owner of a name can transfer the name to a new owner, set a resolver, and create and reassign subdomains. This functionality is all contained in the [HNS registry](../ens.md).
 
-Allocation of names directly under .one (eg, second-level domains ending with .one, such as _alice_) is governed by the  Permanent Registrar, described here. While buying a name from the registrar grants ownership of it in ENS, the registrar itself keeps independent track of who owns the **registration**. The concept of a **registrant** - the owner of a registration - is unique to the  permanent registrar.
+Allocation of names directly under .one (eg, second-level domains ending with .one, such as _alice_) is governed by the  Permanent Registrar, described here. While buying a name from the registrar grants ownership of it in HNS, the registrar itself keeps independent track of who owns the **registration**. The concept of a **registrant** - the owner of a registration - is unique to the  permanent registrar.
 
-The registrant of a name can transfer the registration to another account, and they can recover ownership of the name by calling [reclaim](registrar.md#reclaim-ens-record), which resets ownership of the ENS name to the registrant's account.
+The registrant of a name can transfer the registration to another account, and they can recover ownership of the name by calling [reclaim](registrar.md#reclaim-ens-record), which resets ownership of the HNS name to the registrant's account.
 
-Separating the concept of owning a name from owning a registration makes it possible to more easily build systems that make automated updates to ENS. The registrant can transfer ownership of the name to another account or to a smart contract that manages records, subdomains, etc, while still retaining the ability to recover ownership for upgrades, or in the case of a compromise.
+Separating the concept of owning a name from owning a registration makes it possible to more easily build systems that make automated updates to HNS. The registrant can transfer ownership of the name to another account or to a smart contract that manages records, subdomains, etc, while still retaining the ability to recover ownership for upgrades, or in the case of a compromise.
 
 When thinking about ownership, it's important to be clear whether you're considering ownership of the **name** or the **registration**.
 
@@ -121,13 +121,13 @@ function setApprovalForAll(address operator, bool _approved) public;
 
 These functions manage approvals as documented in [ERC721](https://github.com/ensdomains/ens/blob/master/docs/ethregistrar.rst#id11).
 
-### Reclaim ENS Record
+### Reclaim HNS Record
 
 ```
 function reclaim(uint256 label) external;
 ```
 
-Sets the owner record of the name in the ENS registry to match the owner of the registration in this registry. May only be called by the owner of the registration.
+Sets the owner record of the name in the HNS registry to match the owner of the registration in this registry. May only be called by the owner of the registration.
 
 ## Events
 
@@ -161,4 +161,4 @@ This event is emitted when a controller renews (extends the registration of) a n
 event Transfer(address indexed from, address indexed to, uint256 indexed tokenId);
 ```
 
-This event is emitted when registration is transferred to a new owner. This is distinct from the [ENS Registry](../ens.md)'s Transfer event, which records transfers of ownership of the ENS record.
+This event is emitted when registration is transferred to a new owner. This is distinct from the [HNS Registry](../ens.md)'s Transfer event, which records transfers of ownership of the HNS record.

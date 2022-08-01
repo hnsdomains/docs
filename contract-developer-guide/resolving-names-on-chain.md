@@ -1,6 +1,6 @@
 # Resolving Names On-chain
 
-Solidity libraries for on-chain resolution are not yet available, but ENS resolution is straightforward enough it can be done trivially without a library. First, we define some pared-down interfaces containing only the methods we need:
+Solidity libraries for on-chain resolution are not yet available, but HNS resolution is straightforward enough it can be done trivially without a library. First, we define some pared-down interfaces containing only the methods we need:
 
 ```text
 abstract contract ENS {
@@ -12,7 +12,7 @@ abstract contract Resolver {
 }
 ```
 
-For resolution, only the `resolver` function in the ENS contract is required; other methods permit looking up owners and updating ENS from within a contract that owns a name.
+For resolution, only the `resolver` function in the HNS contract is required; other methods permit looking up owners and updating HNS from within a contract that owns a name.
 
 With these definitions, looking up a name given its node hash is straightforward:
 

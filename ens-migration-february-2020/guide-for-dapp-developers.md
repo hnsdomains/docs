@@ -12,7 +12,7 @@ If you do not update the registry address by the time the migration process begi
 
 If you maintain a library, you should release a new version with the updated address, and notify users that they should update as soon as possible. You may wish to consider publishing instructions for ‘monkeypatching’ the new address, in situations where users cannot easily upgrade to the latest version.
 
-All ENS deployments across mainnet and all testnets now use the same addresses.
+All HNS deployments across mainnet and all testnets now use the same addresses.
 
 ### Wallets, libraries, and DApps that register or update names
 
@@ -23,7 +23,7 @@ If your DApp or library allows users to register names, or to make changes to ex
 
 The migration process will automatically transfer .ETH second-level domains (eg, foo) to the new registry and registrar. Subdomains (eg, bar.foo) and other top-level domains (eg, foo.xyz) will need to be migrated by their owners. For more details on this process, see [our documentation](technical-description.md), or reach out to us for help.
 
-### ENS Secondary Marketplaces
+### HNS Secondary Marketplaces
 
 If you operate a marketplace that trades ENS names, you should immediately stop trading them. Although this vulnerability has not been exploited so far, once its existence is publicised we expect that attackers will reverse-engineer it and exploit it. Halting trading on the current registrar will prevent your users being affected by this.
 
