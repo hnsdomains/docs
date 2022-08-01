@@ -48,7 +48,7 @@ It's ultimately up to the keyholders to allocate the funds. We hope they will fu
 
 ### Where can I manage all my ENS names?
 
-Simply go to [app.ens.domains](https://app.ens.domains) and click on "My Account".
+Simply go to [hnsdomains.one](https://hnsdomains.one) and click on "My Account".
 
 ### Can I trade ENS domains on NFT exchanges?
 
