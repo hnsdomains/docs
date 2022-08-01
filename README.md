@@ -18,7 +18,7 @@ You can try HNS out for yourself now by using the [HNS Manager App](https://hnsd
 
 HNS has two principal components: the [registry](contract-api-reference/ENS.md), and [resolvers](contract-api-reference/publicresolver.md).
 
-![](<.gitbook/assets/ens-architecture (1).png>)
+![](<.gitbook/assets/hns_architecture.png>)
 
 The HNS registry consists of a single smart contract that maintains a list of all domains and subdomains, and stores three critical pieces of information about each:
 
