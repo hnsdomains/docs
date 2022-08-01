@@ -3,22 +3,22 @@
 * [Introduction](README.md)
 * [Terminology](terminology.md)
 * [Frequently Asked Questions](frequently-asked-questions.md)
-* [ENS Deployments](ens-deployments.md)
+* [HNS Deployments](ens-deployments.md)
 * [Registrar Frequently Asked Questions](permanent-registrar-faq.md)
-* [Deploying ENS on a Private Chain](deploying-ens-on-a-private-chain.md)
+* [Deploying HNS on a Private Chain](deploying-ens-on-a-private-chain.md)
 * [DNS Registrar guide](dns-registrar-guide.md)
 
 ## Dapp Developer Guide
 
-* [ENS Enabling your DApp](dapp-developer-guide/ens-enabling-your-dapp.md)
-* [ENS Libraries](dapp-developer-guide/ens-libraries.md)
-* [Working with ENS](dapp-developer-guide/working-with-ens.md)
+* [HNS Enabling your DApp](dapp-developer-guide/ens-enabling-your-dapp.md)
+* [HNS Libraries](dapp-developer-guide/ens-libraries.md)
+* [Working with HNS](dapp-developer-guide/working-with-ens.md)
 * [Resolving Names](dapp-developer-guide/resolving-names.md)
 * [Managing Names](dapp-developer-guide/managing-names.md)
 * [Registering & Renewing Names](dapp-developer-guide/registering-and-renewing-names.md)
-* [ENS Front-End Design Guidelines](dapp-developer-guide/front-end-design-guidelines.md)
-* [ENS as NFT](dapp-developer-guide/ens-as-nft.md)
-* [ENS Layer2 and offchain data support](dapp-developer-guide/ens-l2-offchain.md)
+* [HNS Front-End Design Guidelines](dapp-developer-guide/front-end-design-guidelines.md)
+* [HNS as NFT](dapp-developer-guide/ens-as-nft.md)
+* [HNS Layer2 and offchain data support](dapp-developer-guide/ens-l2-offchain.md)
 
 ## Contract API Reference
 
