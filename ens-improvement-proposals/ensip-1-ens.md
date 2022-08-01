@@ -58,10 +58,10 @@ Registrars are responsible for allocating domain names to users of the system, a
 
 Resolving a name in ENS is a two-step process. First, the ENS registry is called with the name to resolve, after hashing it using the procedure described below. If the record exists, the registry returns the address of its resolver. Then, the resolver is called, using the method appropriate to the resource being requested. The resolver then returns the desired result.
 
-For example, suppose you wish to find the address of the token contract associated with 'beercoin.eth'. First, get the resolver:
+For example, suppose you wish to find the address of the token contract associated with 'beercoin'. First, get the resolver:
 
 ```javascript
-var node = namehash("beercoin.eth");
+var node = namehash("beercoin");
 var resolver = ens.resolver(node);
 ```
 
@@ -116,7 +116,7 @@ Implementations should conform to the following test vectors for namehash:
 ```
 namehash('') = 0x0000000000000000000000000000000000000000000000000000000000000000
 namehash('eth') = 0x93cdeb708b7545dc668eb9280176169d1c33cfd8ed6f04690a0bcc88a93fc4ae
-namehash('foo.eth') = 0xde9b09fd7c5f901e23a3f19fecc54828e9c848539801e86591bd9801b019f84f
+namehash('foo') = 0xde9b09fd7c5f901e23a3f19fecc54828e9c848539801e86591bd9801b019f84f
 ```
 
 ### Registry specification

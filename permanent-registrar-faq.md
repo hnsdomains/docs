@@ -2,11 +2,11 @@
 
 ## About the ENS Registrar
 
-### How many transactions are required to register a .eth name?
+### How many transactions are required to register a  name?
 
 The registrar uses two transactions (commit and reveal) to register a name.
 
-### How long does it take to register a name using the .eth registrar?
+### How long does it take to register a name using the  registrar?
 
 It takes less than 5 minutes to register a name, including a 1-minute delay between the first and second transactions to prevent frontrunning.
 

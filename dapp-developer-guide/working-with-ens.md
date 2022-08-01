@@ -19,7 +19,7 @@ var Web3 = require("web3")
 
 var accounts = ethereum.enable();
 var web3 = new Web3(ethereum);
-var ens = web3.eth.ens;
+var ens = web3.ens;
 ```
 {% endtab %}
 

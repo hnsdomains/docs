@@ -9,7 +9,7 @@ With the proliferation of layer 2 solutions for Ethereum that are starting to re
 
 **EIP 3668** allows for offchain (including Layer 2/L2) lookups of data in a way that is transparent to clients and provides contract authors to implement whatever validation is necessary; in many cases, this can be provided without any additional trust assumptions over and above those required if data is stored onchain.
 
-**ENSIP 10** is a general way to resolve wildcard (eg: \*.foo.eth) on L1. Issuing subdomains and moving the resolution of the parent name offchain allows dapps to create subdomains offchain yet make it accessible through L1.
+**ENSIP 10** is a general way to resolve wildcard (eg: \*.foo) on L1. Issuing subdomains and moving the resolution of the parent name offchain allows dapps to create subdomains offchain yet make it accessible through L1.
 
 ## Steps required for Dapps and wallets to support offchain data lookup.
 
@@ -24,7 +24,7 @@ If your dapps or wallets use one of those libraries, the EIP 3668 and ENSIP 10 s
 
 No code change is required as long as your app is interacting with ENS through [etherjs ENS methods](https://docs.ethers.io/v5/api/providers/provider/#Provider--ens-methods).
 
-To try out these features, `offchainexample.eth` points to so-called "offchain resolver" that fetches data from JSON configuration file hosted on google app engine. It will reply data to any record for offchainexample.eth and its subdomain record such as `2.offchainexample.eth`. The example resolver is not using L2 data but the same mechanism works when the L2 resolver becomes ready.
+To try out these features, `offchainexample` points to so-called "offchain resolver" that fetches data from JSON configuration file hosted on google app engine. It will reply data to any record for offchainexample and its subdomain record such as `2.offchainexample`. The example resolver is not using L2 data but the same mechanism works when the L2 resolver becomes ready.
 
 ```js
 const { ethers } = require("ethers");
@@ -32,8 +32,8 @@ const url = `https://mainnet.infura.io/v3/${process.env.API_KEY}`
 const provider = new ethers.providers.JsonRpcProvider(url);
 
 async function main(){
-  let resolver = await provider.getResolver('1.offchainexample.eth')
-  let address = await provider.resolveName('1.offchainexample.eth')
+  let resolver = await provider.getResolver('1.offchainexample')
+  let address = await provider.resolveName('1.offchainexample')
   let email = await resolver.getText('email')
   console.log({resolver:resolver.address, address, email})
 }

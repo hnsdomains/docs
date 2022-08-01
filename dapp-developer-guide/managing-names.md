@@ -7,20 +7,20 @@ Each name in ENS has an owner. This account or contract is the only one that may
 {% tabs %}
 {% tab title="ensjs" %}
 ```javascript
-await ens.name('alice.eth').setOwner('0x1234...');
+await ens.name('alice').setOwner('0x1234...');
 ```
 {% endtab %}
 
 {% tab title="go-ens" %}
 ```go
 // opts are go-ethereum's bind.TransactOpts
-err := registry.SetOwner(opts, "alice.eth", common.HexToAddress("0x1234..."))
+err := registry.SetOwner(opts, "alice", common.HexToAddress("0x1234..."))
 ```
 {% endtab %}
 
 {% tab title="web3.py" %}
 ```python
-ns.setup_owner('alice.eth', '0x1234...')
+ns.setup_owner('alice', '0x1234...')
 ```
 {% endtab %}
 {% endtabs %}
@@ -32,26 +32,26 @@ The owner of any domain can configure subdomains as desired. This is achieved by
 {% tabs %}
 {% tab title="ensjs" %}
 ```javascript
-await ens.name('alice.eth').createSubdomain('iam');
+await ens.name('alice').createSubdomain('iam');
 ```
 {% endtab %}
 
 {% tab title="go-ens" %}
 ```go
 // opts are go-ethereum's bind.TransactOpts
-err := registry.SetSubdomainOwner(opts, "alice.eth", "iam", common.HexToAddress("0x1234..."))
+err := registry.SetSubdomainOwner(opts, "alice", "iam", common.HexToAddress("0x1234..."))
 ```
 {% endtab %}
 
 {% tab title="web3.py" %}
 ```python
-ns.setup_owner('iam.alice.eth', '0x1234...')
+ns.setup_owner('iam.alice', '0x1234...')
 ```
 
 Additionally, web3.py provides a convenience method to create a subdomain, set a resolver, and configure an address record all at once:
 
 ```python
-ns.setup_address('iam.alice.eth', '0x1234...')
+ns.setup_address('iam.alice', '0x1234...')
 ```
 
 In the common case that the name should be pointed to the owner's address, the second argument is optional.
@@ -67,7 +67,7 @@ Most commonly, names are set to use a 'standard' resolver called the public reso
 {% tabs %}
 {% tab title="ensjs" %}
 ```javascript
-await ens.name('iam.alice.eth').setResolver('0x1234');
+await ens.name('iam.alice').setResolver('0x1234');
 ```
 
 On mainnet and the Kovan test network, 'resolver.eth' is configured to point to the latest deployed version of the public resolver, making it possible to easily configure a name to use the public resolver:

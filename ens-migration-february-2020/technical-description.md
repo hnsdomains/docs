@@ -25,14 +25,14 @@ The new registry implementation has been [audited by Sam Sun](https://gist.githu
 
 In order to make the migration as smooth as possible, the new registry has a fallback configured; if a record is not found in its own storage, it will look it up in the previous ENS registry contract. This fallback works only for read operations; if a record exists in the old registry but not yet in the new one, users cannot call functions to modify that record on the new registry.
 
-This means that to migrate each name over from the previous registry, the name must be recreated as if from scratch - so, for example, if ‘foo.eth’ does not yet exist in the new registry, the owner of ‘eth’ must create it in the same fashion as if it were a new domain, by calling \`setSubnodeOwner\` (or the new \`setSubnodeRecord\`). Other top-level domain owners (eg, .luxe, .kred, .club and .art) will need to do this on behalf of their users, so those users can recover write access to their domains.
+This means that to migrate each name over from the previous registry, the name must be recreated as if from scratch - so, for example, if ‘foo’ does not yet exist in the new registry, the owner of ‘eth’ must create it in the same fashion as if it were a new domain, by calling \`setSubnodeOwner\` (or the new \`setSubnodeRecord\`). Other top-level domain owners (eg, .luxe, .kred, .club and .art) will need to do this on behalf of their users, so those users can recover write access to their domains.
 
 As a result of this fallback, if a record has not been migrated to the new registry, users and processes can continue to update records in the old registry; when they do, those changes will be reflected in the new one. At the point where a record is migrated to the new registry, it ceases to reflect any changes made in the old one. This ensures that names operated by smart contracts continue to function until their owners can take manual action to migrate them over.
 
 Migration strategies for each class of name are outlined below:
 
-* Top-level domains (.eth, .luxe, .kred, .club, .art, .xyz, and .reverse) were migrated over as part of the deployment process.
-* .eth second-level domains (eg, foo.eth) will be migrated over automatically for users - see the ‘migration contract’ section below for details.
+* Top-level domains (, .luxe, .kred, .club, .art, .xyz, and .reverse) were migrated over as part of the deployment process.
+*  second-level domains (eg, foo) will be migrated over automatically for users - see the ‘migration contract’ section below for details.
 * Subdomains managed by the Subdomain Registrar will also be migrated over automatically for users.
 * Subdomains created by other means will need to be recreated by the owner of the parent domain calling \`setSubnodeOwner\` or \`setSubnodeRecord\`. The ENS dapp at app.ens.domains provides a one-click button to to do this for domains that are owned directly by users.
 * Reverse records (.addr.reverse domains) will need to be recreated by repeating the ‘claim’ process in the ENS dapp UI.
@@ -43,7 +43,7 @@ Name resolution will continue to work normally for names that have not yet been 
 
 ### .ETH Registrar
 
-A new instance of the .eth registrar (BaseRegistrarImplementation) has been deployed, and can be found at 0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85. This registrar is largely unchanged, with only a couple of minor modifications made to support the migration.
+A new instance of the  registrar (BaseRegistrarImplementation) has been deployed, and can be found at 0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85. This registrar is largely unchanged, with only a couple of minor modifications made to support the migration.
 
 ### Migration Contract
 

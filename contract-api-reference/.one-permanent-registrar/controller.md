@@ -4,7 +4,7 @@
 
 This section documents the parts of the [ETHRegistrarController](https://github.com/ensdomains/ethregistrar/blob/master/contracts/ETHRegistrarController.sol) relevant to implementers of tools that interact with it. Functionality exclusive to the registrar owner is omitted for brevity.
 
-The controller works exclusively with plaintext labels \(eg, 'alice' for 'alice.eth'\).
+The controller works exclusively with plaintext labels \(eg, 'alice' for 'alice'\).
 
 To prevent frontrunning, the ETHRegistrarController requires a commit/reveal process for new name registrations \(but not for renewals\). To register a name, the user must:
 
@@ -123,7 +123,7 @@ Callers **should** use this function to check if a name is available for registr
 function makeCommitment(string name, address owner, bytes32 secret) pure public returns(bytes32);
 ```
 
-`makeCommitment` generates and returns a commitment hash from a name label \(eg, 'myname', not 'myname.eth'\) owner, and secret value.
+`makeCommitment` generates and returns a commitment hash from a name label \(eg, 'myname', not 'myname'\) owner, and secret value.
 
 ## Write Operations
 

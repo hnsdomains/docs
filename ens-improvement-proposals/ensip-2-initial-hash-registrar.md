@@ -1,6 +1,6 @@
 ---
 description: >-
-  Describes the hash registrar initially used to register ENS .eth domains
+  Describes the hash registrar initially used to register ENS  domains
   (formerly EIP-162).
 ---
 
@@ -23,7 +23,7 @@ For more background, refer to ENSIP-1.
 
 A well designed and governed registrar is essential to the success of the ENS described in ENSIP-1, but is described separately in this document as it is external to the core ENS protocol.
 
-In order to maximize utility and adoption of a new namespace, the registrar should mitigate speculation and "name squatting", however the best approach for mitigation is unclear. Thus an "initial" registrar is proposed, which implements a simple approach to name allocation. During the initial period, the available namespace will be significantly restricted to the `.eth` top level domain, and subdomain shorter than 7 characters in length disallowed. This specification largely describes @alexvandesande and @arachnid's [hash registrar implementation](https://github.com/ethereum/ens/blob/mainnet/contracts/HashRegistrarSimplified.sol) in order to facilitate discussion.
+In order to maximize utility and adoption of a new namespace, the registrar should mitigate speculation and "name squatting", however the best approach for mitigation is unclear. Thus an "initial" registrar is proposed, which implements a simple approach to name allocation. During the initial period, the available namespace will be significantly restricted to the `` top level domain, and subdomain shorter than 7 characters in length disallowed. This specification largely describes @alexvandesande and @arachnid's [hash registrar implementation](https://github.com/ethereum/ens/blob/mainnet/contracts/HashRegistrarSimplified.sol) in order to facilitate discussion.
 
 The intent is to replace the Initial Registrar contract with a permanent registrar contract. The Permanent Registrar will increase the available namespace, and incorporate lessons learned from the performance of the Initial Registrar. This upgrade is expected to take place within approximately 2 years of initial deployment.
 

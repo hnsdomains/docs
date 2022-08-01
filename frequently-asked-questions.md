@@ -20,7 +20,7 @@ Yes, you can update the addresses and other resources pointed to by your name at
 
 ### Can I register a TLD of my own in the ENS?
 
-No. We consider ENS to be part of the 'global namespace' inhabited by DNS, and so we do our best not to pollute that namespace. ENS-specific TLDs are restricted to only .eth (on mainnet), or .eth and .test (on Ropsten), plus any special purpose TLDs such as those required to permit reverse lookups.
+No. We consider ENS to be part of the 'global namespace' inhabited by DNS, and so we do our best not to pollute that namespace. ENS-specific TLDs are restricted to only  (on mainnet), or  and .test (on Ropsten), plus any special purpose TLDs such as those required to permit reverse lookups.
 
 In addition to that, we are deploying support for importing DNS domains from the majority of DNS top-level domains using an integration that relies on DNSSEC. For details on those plans, please read [this post](https://medium.com/the-ethereum-name-service/upcoming-changes-to-the-ens-root-a1b78fd52b38).
 

@@ -37,7 +37,7 @@ Let:
 
 * `namehash` be the algorithm defined in ENSIP-1.
 * `dnsencode` be the process for encoding DNS names specified in section 3.1 of RFC1035, with the exception that there is no limit on the total length of the encoded name. The empty string is encoded identically to the name '.', as a single 0-octet.
-* `parent` be a function that removes the first label from a name (eg, `parent('foo.eth') = 'eth'`). `parent('tld')` is defined as the empty string ''.
+* `parent` be a function that removes the first label from a name (eg, `parent('foo') = 'eth'`). `parent('tld')` is defined as the empty string ''.
 * `ens` is the ENS registry contract for the current network.
 
 ENSIP-10-compliant ENS resolvers MAY implement the following function interface:
@@ -111,7 +111,7 @@ The proposed implementation supports wildcard resolution in a manner that minimi
 
 It also recognizes an existing consensus concerning the desirability of wildcard resolution for ENS, enabling more widespread adoption of the original specification by solving for a key scalability obstacle.
 
-While introducing an optional `resolve` function for resolvers, taking the unhashed name and calldata for a resolution function increases implementation complexity, it provides a means for resolvers to obtain plaintext labels and act accordingly, which enables many wildcard-related use-cases that would otherwise not be possible - for example, a wildcard resolver could resolve `id.nifty.eth` to the owner of the NFT with id `id` in some collection. With only namehashes to work with, this is not possible.
+While introducing an optional `resolve` function for resolvers, taking the unhashed name and calldata for a resolution function increases implementation complexity, it provides a means for resolvers to obtain plaintext labels and act accordingly, which enables many wildcard-related use-cases that would otherwise not be possible - for example, a wildcard resolver could resolve `id.nifty` to the owner of the NFT with id `id` in some collection. With only namehashes to work with, this is not possible.
 
 The DNS wire format is used for encoding names as it permits quick and gas-efficient hashing of names, as well as other common operations such as fetching or removing individual labels; in contrast, dot-separated names require iterating over every character in the name to find the delimiter.
 

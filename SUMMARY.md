@@ -41,9 +41,9 @@
 * [ReverseRegistrar](contract-api-reference/reverseregistrar.md)
 * [TestRegistrar](contract-api-reference/testregistrar.md)
 * [PublicResolver](contract-api-reference/publicresolver.md)
-* [.eth Permanent Registrar](contract-api-reference/.eth-permanent-registrar/README.md)
-  * [Registrar](contract-api-reference/.eth-permanent-registrar/registrar.md)
-  * [Controller](contract-api-reference/.eth-permanent-registrar/controller.md)
+* [.one Permanent Registrar](contract-api-reference/.one-permanent-registrar/README.md)
+  * [Registrar](contract-api-reference/.one-permanent-registrar/registrar.md)
+  * [Controller](contract-api-reference/.one-permanent-registrar/controller.md)
 * [DNS Registrar](contract-api-reference/dns-registrar.md)
 
 ## Contract Developer Guide
@@ -51,8 +51,7 @@
 * [Resolving Names On-chain](contract-developer-guide/resolving-names-on-chain.md)
 * [Writing a Resolver](contract-developer-guide/writing-a-resolver.md)
 * [Writing a Registrar](contract-developer-guide/writing-a-registrar.md)
-* [ENS Discussion Forum](https://discuss.ens.domains)
-* [ENS Support Chat](https://discord.gg/AskZbFx)
+* [HNS Support Chat](https://discord.gg/nX7ZdcSsNt)
 
 ## ENS Migration (February 2020)
 

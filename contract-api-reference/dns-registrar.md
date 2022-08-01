@@ -15,11 +15,11 @@ DNSSEC oracle allows anyone to submit proof of any DNSSEC-signed DNS record on t
 * Mainnet, at TBD.
 * Ropsten, at 0x475e527d54b91b0b011DA573C69Ac54B2eC269ea.
 
-When you register ENS names, you can look up the registrar contract address by looking up its parent domain owner (eg: `.eth`, for `.matoken.eth`). However, when you register via DNSSEC Registrars, the parent domain owner may not exist if you are the first person to register under the TLD.
+When you register ENS names, you can look up the registrar contract address by looking up its parent domain owner (eg: ``, for `.matoken`). However, when you register via DNSSEC Registrars, the parent domain owner may not exist if you are the first person to register under the TLD.
 
 ## Gas cost
 
-Submitting proof to DNSSEC Oracle takes up a lot of gas because it is heavy computation work. It will take up even more gas if you submit the first domain under the specific TLD. This is because it submits proof of both your domain and its parent domain(eg: `matoken.live`, as well as `.live`). When tested on Ropsten network, [it cost 1,663,953 gas](https://ropsten.etherscan.io/tx/0x7ba91728530b2a9f325b330986265fd455639fd3f07e775cf68ee8c767b2637f)
+Submitting proof to DNSSEC Oracle takes up a lot of gas because it is heavy computation work. It will take up even more gas if you submit the first domain under the specific TLD. This is because it submits proof of both your domain and its parent domain(eg: `matoken.live`, as well as `.live`). When tested on Ropsten network, [it cost 1,663,953 gas](https://ropstenerscan.io/tx/0x7ba91728530b2a9f325b330986265fd455639fd3f07e775cf68ee8c767b2637f)
 
 ## Typescript/Javascript Libraries
 

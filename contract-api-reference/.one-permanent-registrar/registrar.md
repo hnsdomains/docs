@@ -12,7 +12,7 @@ This contract implements the core functionality of the permanent registrar, with
 
 This section documents the parts of the registrar interface relevant to implementers of tools that interact with it. Functionality exclusive to the registrar owner or to controllers is omitted for brevity.
 
-The registrar works exclusively with label hashes - the `keccak256` of the first component of the label (eg, `keccak256('ens')` for `ens.eth`). For compatibility with ERC721, these are expressed as uint256 values rather than bytes32, but can be cast backwards and forwards transparently. The namehash of a name can be derived by computing `keccak256(baseNode, labelHash)`, where `basenode` is the namehash of the TLD the registrar manages - eg, `namehash('eth')`.
+The registrar works exclusively with label hashes - the `keccak256` of the first component of the label (eg, `keccak256('ens')` for `ens.one`). For compatibility with ERC721, these are expressed as uint256 values rather than bytes32, but can be cast backwards and forwards transparently. The namehash of a name can be derived by computing `keccak256(baseNode, labelHash)`, where `basenode` is the namehash of the TLD the registrar manages - eg, `namehash('one')`.
 
 Registrations and renewals are handled via the [controller](controller.md).
 
@@ -20,7 +20,7 @@ Registrations and renewals are handled via the [controller](controller.md).
 
 All names inside ENS have an owner. The owner of a name can transfer the name to a new owner, set a resolver, and create and reassign subdomains. This functionality is all contained in the [ENS registry](../ens.md).
 
-Allocation of names directly under .eth (eg, second-level domains ending with .eth, such as _alice.eth_) is governed by the .eth Permanent Registrar, described here. While buying a name from the registrar grants ownership of it in ENS, the registrar itself keeps independent track of who owns the **registration**. The concept of a **registrant** - the owner of a registration - is unique to the .eth permanent registrar.
+Allocation of names directly under .one (eg, second-level domains ending with .one, such as _alice_) is governed by the  Permanent Registrar, described here. While buying a name from the registrar grants ownership of it in ENS, the registrar itself keeps independent track of who owns the **registration**. The concept of a **registrant** - the owner of a registration - is unique to the  permanent registrar.
 
 The registrant of a name can transfer the registration to another account, and they can recover ownership of the name by calling [reclaim](registrar.md#reclaim-ens-record), which resets ownership of the ENS name to the registrant's account.
 

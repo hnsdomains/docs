@@ -45,7 +45,7 @@ Global Keys must be made up of lowercase letters, numbers and the hyphen (-).
 
 * **avatar** - a URL to an image used as an avatar or logo
 * **description** - A description of the name
-* **display** - a canonical display name for the ENS name; this MUST match the ENS name when its case is folded, and clients should ignore this value if it does not (e.g. `"ricmoo.eth"` could set this to `"RicMoo.eth"`)
+* **display** - a canonical display name for the ENS name; this MUST match the ENS name when its case is folded, and clients should ignore this value if it does not (e.g. `"ricmoo"` could set this to `"RicMoo"`)
 * **email** - an e-mail address
 * **keywords** - A list of comma-separated keywords, ordered by most significant first; clients that interpresent this field may choose a threshold beyond which to ignore
 * **mail** - A physical mailing address
