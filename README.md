@@ -1,6 +1,6 @@
 # Introduction
 
-The Harmony Name Service (HNS) is a distributed, open, and extENSible naming system based on the Harmony blockchain.
+The Harmony Name Service (HNS) is a distributed, open, and extensible naming system on the Harmony blockchain based on https://ens.domains/
 
 HNS’s job is to map human-readable names like ‘alice.one’ to machine-readable identifiers such as Ethereum addresses, other cryptocurrency addresses, content hashes, and metadata. HNS also supports ‘reverse resolution’, making it possible to associate metadata such as canonical names or interface descriptions with Ethereum addresses.
 
