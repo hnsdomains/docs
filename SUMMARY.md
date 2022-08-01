@@ -13,8 +13,6 @@
 * [Working with HNS](dapp-developer-guide/working-with-ens.md)
 * [Resolving Names](dapp-developer-guide/resolving-names.md)
 * [Managing Names](dapp-developer-guide/managing-names.md)
-* [Registering & Renewing Names](dapp-developer-guide/registering-and-renewing-names.md)
-* [HNS Front-End Design Guidelines](dapp-developer-guide/front-end-design-guidelines.md)
 * [HNS as NFT](dapp-developer-guide/ens-as-nft.md)
 * [HNS Layer2 and offchain data support](dapp-developer-guide/ens-l2-offchain.md)
 
