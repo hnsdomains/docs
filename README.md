@@ -44,13 +44,13 @@ Resolving a name in HNS is a two-step process: First, ask the registry what reso
 
 ![](<.gitbook/assets/data_flow.png>)
 
-In the above example, we're trying to find the Ethereum address pointed to by 'foo.eth'. First, we ask the registry which resolver is responsible for 'foo.eth'. Then, we query that resolver for the address of 'foo.eth'.
+In the above example, we're trying to find the Ethereum address pointed to by 'foo.one'. First, we ask the registry which resolver is responsible for 'foo.one'. Then, we query that resolver for the address of 'foo.one'.
 
 ### Namehash
 
-Resource constraints in smart contracts make interacting directly with human-readable names inefficient, so HNS works purely with fixed length 256-bit cryptographic hashes. In order to derive the hash from a name while still preserving its hierarchal properties, a process called Namehash is used. For example, the namehash of 'alice.eth' is _0x787192fc5378cc32aa956ddfdedbf26b24e8d78e40109add0eea2c1a012c3dec_; this is the representation of names that is used exclusively inside HNS.
+Resource constraints in smart contracts make interacting directly with human-readable names inefficient, so HNS works purely with fixed length 256-bit cryptographic hashes. In order to derive the hash from a name while still preserving its hierarchal properties, a process called Namehash is used. For example, the namehash of 'alice.one' is _0x787192fc5378cc32aa956ddfdedbf26b24e8d78e40109add0eea2c1a012c3dec_; this is the representation of names that is used exclusively inside HNS.
 
-Namehash is a recursive process that can generate a unique hash for any valid domain name. Starting with the namehash of any domain - for example, 'alice.eth' - it's possible to derive the namehash of any subdomain - for example 'iam.alice.eth' - without having to know or handle the original human-readable name. It is this property that makes it possible for HNS to provide a hierarchal system, without having to deal with human-readable text strings internally.
+Namehash is a recursive process that can generate a unique hash for any valid domain name. Starting with the namehash of any domain - for example, 'alice.one' - it's possible to derive the namehash of any subdomain - for example 'iam.alice.one' - without having to know or handle the original human-readable name. It is this property that makes it possible for HNS to provide a hierarchal system, without having to deal with human-readable text strings internally.
 
 Before being hashed with namehash, names are first normalized, using a process called UTS-46 normalization. This HNSures that upper- and lower-case names are treated equivalently, and that invalid characters are prohibited. Anything that hashes and resolves a name **must** first normalize it, to HNSure that all users get a consistent view of HNS.
 
@@ -70,4 +70,4 @@ Check out the Contract Developer Guide, starting with [Resolving Names On-chain]
 
 #### I want reference documentation for the HNS smart contracts
 
-Check out the Contract API Reference. We have reference documentation for HNS's core contract, the [registry](contract-api-reference/HNS.md), for [resolvers](contract-api-reference/publicresolver.md), and for commonly-used registrars such as the [Test registrar](contract-api-reference/testregistrar.md), [reverse registrar](contract-api-reference/reverseregistrar.md), and the [.eth registrar](contract-api-reference/.eth-permanent-registrar/).
+Check out the Contract API Reference. We have reference documentation for HNS's core contract, the [registry](contract-api-reference/HNS.md), for [resolvers](contract-api-reference/publicresolver.md), and for commonly-used registrars such as the [Test registrar](contract-api-reference/testregistrar.md), [reverse registrar](contract-api-reference/reverseregistrar.md), and the [.one registrar](contract-api-reference/.one-permanent-registrar/).
